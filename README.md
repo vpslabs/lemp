@@ -2,6 +2,9 @@
 The Linux-Nginx-MariaDB-PHP (LEMP) installer for local computer and VPS for Ubuntu / Debian derivative.
 
 This will remove installed PHP, NginX and MariaDB then install the LEMP stack from ppa:ondrej/php desired version:
+- Latest PHP 8.1.1
+- NginX 7.18.0
+- MariaDB Ver 15.1 Distrib 10.3.32-MariaDB
 
 ## Installation
 
@@ -90,6 +93,7 @@ systemctl restart mariadb
 
 Checking the service status of NginX, MariaDB, and PHP
 ```
-sudo systemctl status nginx.service
+systemctl status nginx.service
 systemctl status mariadb.service
+systemctl status php8.1-fpm.service
 ```
